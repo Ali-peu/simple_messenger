@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "318515116962",
+    "project_id": "ali-isa12-simple-messenger",
+    "storage_bucket": "ali-isa12-simple-messenger.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:318515116962:android:d1261f4db42edb8efa90fb",
+        "android_client_info": {
+          "package_name": "com.simplemessenger.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbSSgP6Nbnrc5KS_Ps-yWd5LopHrBvb2A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
