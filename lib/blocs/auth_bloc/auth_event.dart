@@ -5,3 +5,5 @@ sealed class AuthEvent {}
 
 
 class GoogleAuth extends AuthEvent{}
+
+class SignOut extends AuthEvent{}

@@ -60,9 +60,10 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyAbSSgP6Nbnrc5KS_Ps-yWd5LopHrBvb2A',
-    appId: '1:318515116962:android:d1261f4db42edb8efa90fb',
+    appId: '1:318515116962:android:0c6d0e9030fda0adfa90fb',
     messagingSenderId: '318515116962',
     projectId: 'ali-isa12-simple-messenger',
     storageBucket: 'ali-isa12-simple-messenger.appspot.com',
   );
+
 }

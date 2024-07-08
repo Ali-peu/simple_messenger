@@ -11,6 +11,10 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
   AuthBloc({required FirebaseApi firebaseApi})
       : _firebaseApi = firebaseApi,
         super(const AuthState()) {
+
+          on<SignOut>((event, emit) async {
+            await _firebaseApi.signOut();
+          });
     on<GoogleAuth>((event, emit) async {
       emit(state.copyWith(authStatus: AuthStatus.loading));
 
@@ -18,7 +22,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
         final response = await _firebaseApi.googleSign();
         if (response) {
           emit(state.copyWith(authStatus: AuthStatus.success));
-        }
+        }else
         {
           emit(state.copyWith(authStatus: AuthStatus.failure));
         }
@@ -29,7 +33,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     });
   }
 
-  FirebaseApi _firebaseApi;
+  final FirebaseApi _firebaseApi;
 
   void print(String print) {
     if (kDebugMode) {
